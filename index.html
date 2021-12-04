@@ -1,0 +1,79 @@
+<!-- <script> localStorage.clear()</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto GifOs </title>
+
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header> 
+        <p class="header"> ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    
+
+    
+    <div class="buttons">
+            <div> <img onclick="location='index.html'" src="images/day_logo.png" alt="logo" class="logo" id="logo"> </div>
+        <div class="right_buttons">
+                 <button onclick="location='recording.html'" class="button" id="button1"> <span> Crear Guifos </span> </button>
+                 <button class="button" id="button2"> Elegir tema
+                    <ul class="theme_options" id="theme_options">
+                        <li id="btn1" onclick="swapStyleSheet('styles/style.css')"> Sailor Day </li>
+                        <li id="btn2" onclick="swapStyleSheet('styles/darkstyle.css')"> Sailor Night</li>
+                     </ul> </button>
+                 <button class="button" id="arrow"> <img  class="arrow_img" src="images/dropdown.svg" alt="arrow"> </button>
+                 <a> Mis Guifos </a> 
+        </div>
+    </div>
+                
+
+        <div class="grey_box"> 
+                <!-- <form action="index.html" method="GET"> -->
+            <h2 class="search"> Buscar </h2>
+            <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras..." id="text"> 
+            <button id="search_button" type="button"> <img src="images/lupa_inactive.svg" alt="lupa" class="lupa" id="lupa"> <img src="images/lupa.svg" alt="lupa_active" id="lupa_active"> Buscar </button>
+            <ul id="search_suggestions">
+                <li class="options" id="s1"> <span id="sug1"> cat </span> </li>
+                <li class="options" id="s2"> <span id="sug2">  dog </span> </li>
+                <li class="options" id="s3"> <span id="sug3"> movies </span> </li>
+            </ul>
+        </div>
+
+        <div id="filtershere" class="filtershere" >  
+           
+        </div>
+    </header>
+
+    <main>
+
+            <div class='white_box' id='white_box'> 
+            Hoy te sugerimos:
+            </div>
+
+            <div id="suggestion_boxes">
+
+            </div>
+               
+        
+            </section>
+    
+    <div class='trending_box' id='trending_box'> Tendencias: </div>
+
+    <div id="gifResults" >
+       
+    </div>
+
+    
+
+
+    
+
+</main>
+    <script type="text/javascript" src="javascript/js.js"> </script>
+</body>
+</html>

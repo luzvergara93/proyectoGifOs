@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    vertical-align: top;
+    background-color: #110038;
+    font-family:'Chakra Petch', sans-serif; 
+  }
+
+
+
+body {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+     
+  }
+
+main {
+    margin-left: 100px;
+    margin-right: 140px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+
+.header {
+    width: 100%;
+    height: 23px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    font-family:'Chakra Petch', sans-serif; 
+    font-size: 12px;
+    color: white;
+    box-shadow: none;
+    position: absolute;
+    top: 2px;
+}
+
+.logo {
+    padding-top: 35px;
+    margin-bottom: 16px;
+
+}
+
+.buttons {
+    
+    padding-right: 35px;
+    margin-left: 100px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.buttons p {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.right_buttons {
+    display: flex;
+    padding-right: 35px;
+    margin-top: 44px;
+
+}
+
+.right_buttons a {
+    color: white;
+}
+
+.button {
+    background-color: #EE3EFE ;
+    color: #ffffff;
+    border: 1px solid #110038;
+    font-size: 16px;
+    font-family: 'Chakra Petch', sans-serif;
+    box-shadow:  inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    
+}
+
+#button1 {
+    width: 144px;
+    height: 36px;
+    margin-right: 16px;
+    
+}
+
+#button1 span {
+    background-color: transparent;
+}
+
+#button1:hover, #button2:hover, #arrow:hover {
+
+    border: 1px dotted #110038;
+    background-color: #A72CB3;
+}
+
+.right_buttons a:hover{
+    border: 1px dotted #ffffff;
+}
+
+#button2 {
+    width: 131px;
+    height: 36px;
+    text-align: center;
+    
+}
+
+#arrow {
+    width: 36px;
+    height: 36px;
+    margin-right: 16.5px;
+    position: relative;
+    
+    
+    
+}
+
+.arrow_img{
+    background-color: transparent;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    color: white;
+}
+
+
+
+.theme_options {
+    width: 165px;
+    height: 102px;
+    background-color: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: relative;
+    top:15px;
+    display: none;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    z-index: 100;
+}
+
+
+
+#btn1, #btn2 {
+    list-style: none;
+    width: 150px;
+    height: 36px;
+    background-color: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    text-align: left;
+    font-size: 16px;
+    color: #110038;
+    
+}
+
+#btn1:hover, #btn2:hover{
+    color: #ffffff;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+
+.grey_box {
+    width: 1200px;
+    height: 99px;
+    background-color: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: absolute;
+    left: 17.5%;
+    top: 200px;
+}
+
+.lupa {
+    background-color: #E6E6E6; 
+    margin-left: 10px;
+}
+
+#lupa_active{
+    display: none;
+    background-color: #F7C9F3;
+    margin-left: 10px;
+}
+
+.search {
+    width: 1194px; 
+    height: 24px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 12px; 
+    text-indent: 3px;
+    
+
+}
+
+#text {
+    width: 1057px; 
+    height: 48px;
+    background-color: white;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    position: relative;
+    left: 1%;
+    top: 12px;
+    
+    
+}
+
+#search_button {
+    width: 102px;
+    height: 36px;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #B4B4B4;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    text-indent: 25px;
+    
+}
+
+#search_suggestions {
+    width: 1200px;
+    height: 160px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: relative;
+    /* top: 238px; */
+    top: 26px;
+    z-index: 100;
+    display: none;
+    flex-flow: column;
+    justify-content: space-evenly;
+     
+}
+
+.options{
+    color: #110038;
+    font-size: 16px;
+    width: 1057px;
+    height: 36px;
+    position: relative;
+    left: 15px;
+}
+
+
+
+#s1, #s2, #s3 {
+    
+    background-color: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    list-style: none;
+}
+
+#s1:hover, #s2:hover, #s3:hover {
+    border: 1px dotted #110038;
+    background: #DBDBDB;
+}
+
+span {
+    background-color: transparent;
+}
+
+#filtershere {
+   
+    height: 50px;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 230px;
+
+}
+
+#filter {
+    font-size: 14px;
+    color: #FFFFFF;
+    width: max-content;
+    padding: 5px;
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;   
+}
+
+.white_box, .trending_box {
+    margin-top: 64px;
+    background-color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    width: 1200px;
+    height:32px;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    position: relative;
+    top: 164px;   
+    display: table-cell;
+    vertical-align: middle;
+    text-indent: 7px;
+
+}  
+
+.trending_box {
+    top: 200px;
+
+}
+
+#contenedorIndividual img {
+    height: 298px;
+    width:298px;
+    position: relative;
+ 
+}
+
+#titleHover {
+    width: 298px;
+    height:24px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 10000;
+    bottom: 20px;
+    left: 0px;
+    display: none;
+
+}
+
+.img {
+    position: relative;
+    top: 11px;
+    height: 280px;
+    width: 280px;
+}
+
+.img:hover, .verMas:hover {
+    border: 1px dotted #110038;
+}
+
+#contenedorIndividual {
+    height: 298px;
+    width:298px;
+    padding-right: 16px;
+    padding-bottom: 17px; 
+    position: relative;
+    top: 200px;
+    
+}
+
+#gifResults {
+    /*padding-left: 100px;
+    padding-right: 100px; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 200px;
+
+}
+
+#suggestion_boxes {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    top: 190px; 
+    width: 1200px;
+    
+}
+
+
+.images:hover {
+    border: 1px dotted #110038;
+}
+
+
+.innerContainer {
+    width: 288px;
+    height: 313px;
+    background-color: #E6E6E6; 
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    display: flex;
+    
+
+}
+
+.random_img{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    bottom: 3px;
+    
+}
+
+
+.random_title {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    width: 280px;
+    height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 2px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.random_title p{
+    background-color: transparent;
+}
+
+#closeButton {
+    background-color: transparent;
+}
+
+.verMas {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    height: 34px;
+    width: 81px;
+    left: 18px;
+    bottom: 13px;
+    position: absolute;
+}
+
+.verMas span {
+    
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+#search_title {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    width: 280px;
+    height: 24px;
+    color: #FFFFFF;
+    z-index: 1000;
+
+}
+
+
+
